@@ -1,0 +1,40 @@
+ALGORITHM algorithm_name
+VAR
+    tab1,tab2:tableaux;
+    PROCEDURE vect(tab1,tab2:tableaux)
+    VAR
+        somme:INTEGER
+    BEGIN
+        for i FROM 0 TO tab1.length STEP DO 
+        somme+= tab1[i]*tab2[i]
+        END FOR
+        IF(somme===0)THEN
+        write("deux vecteur vailde")
+       
+            
+        ELSE
+           ("pas valide")
+        END_IF
+        END
+        FUNCTION vect 2(tab1,tab2) : BOOLEAN
+        VAR
+            somme : INTEGER
+        BEGIN
+            for i FROM 0 TO tab1.length STEP DO
+            SOMME += tab1[i]*tab2[i]
+            END_FOR
+            IF (somme===0) THEN
+               RETURN true ;
+            ELSE
+                RETURN false ;
+            END_IF
+       
+    END
+BEGIN
+    vect (tab1,tab2)
+    IF (vect2(tab2,tab1)==true) THEN
+       write("deux vecteur valide")
+    ELSE
+        ("pas vailde")
+    END_IF
+END
